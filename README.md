@@ -34,4 +34,3 @@ Mis alcances son lograr todas las pantallas con sus rutas, una base de datos, en
 
 ## Uso
 Competition System se usará de manera local en el GYM 58 y tendrá su propia URL de acceso.
-
