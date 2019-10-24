@@ -1,1 +1,23 @@
-<p>bienvenida works!</p>
+
+<div class="pp">><p>This software is made to make your tournament as agile as posible, 
+    just write your Event name and click on "start"</p>
+</div>
+
+<div class="nameOfT" ng-app="">
+         <p>NAME OF THE TOURNAMENT:</p>
+         <form (submit)= "addEvent(newT)">
+        <p><input type="text" #newT  placeholder="New Tournament"></p>
+        
+        <button> START </button>
+        <br>
+        <br>
+      {{eventName[eventName.length-1]}}
+        </form>
+        </div>
+        
+
+      
+        
+      
+        
+

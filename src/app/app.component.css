@@ -1,8 +1,10 @@
 .welcome{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color:blue;
-    font-size: 300%;
+    color:yellow;
+    font-size: 350%;
     position: relative;
-    top:200px;
+    top:130px;
     left:200px;
+    right:200px;
 }
+

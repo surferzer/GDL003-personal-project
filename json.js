@@ -1,6 +1,8 @@
-"bracket" [
 
-    "competitors" [{
+ [
+    
+    
+        {
             "id": "1",
             "name": "Juan Pablo Benítez Rodríguez",
             "age": "25 años",
@@ -96,4 +98,4 @@
 
 
 
-]
+
