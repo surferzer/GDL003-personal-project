@@ -14,6 +14,8 @@ export class BienvenidaComponent implements OnInit {
     
     this.eventName.push(newT.value)
     console.log(this.eventName[0]);
+    newT.value="";
+    newT.focus();
 return false;
     
     }

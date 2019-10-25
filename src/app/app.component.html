@@ -16,12 +16,25 @@
 
     <h1>LIST OF FIGHTERS</h1>
     <ul>
-    <app-fighters-by-category *ngFor= "let fighter of fighters" [nameFighter]="fighter"></app-fighters-by-category>
+    <app-fighters-by-category *ngFor= "let fighter of this.fighters" [nameFighter]="fighter"></app-fighters-by-category>
     </ul>
 
+<br>
+<br>
+<div>
+    <button (click)= randomThis()>Generar bracket</button>
+</div>
 
+
+
+
+
+
+<hr>
+<br>
+<br>
     <div>
-    <li>
+    <ul>
         <p>{{id}}</p>
         <p>Name: {{name}}</p>
         <p>Age: {{age}}</p>
@@ -30,10 +43,9 @@
         <p>Category: {{category}}</p>
         <p>NOTES: {{notes}}</p>
        <p><img src= {{photo}} width="100px"></p>
-        </li>
+    </ul>
       </div>
         
-
 
 
 

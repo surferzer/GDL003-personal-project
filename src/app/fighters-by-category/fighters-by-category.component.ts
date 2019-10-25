@@ -1,5 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 
+
+
 @Component({
   selector: 'app-fighters-by-category',
   templateUrl: './fighters-by-category.component.html',
