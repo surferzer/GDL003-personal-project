@@ -83,6 +83,29 @@ winner(){
    this.round2.push(this.selectedFighters[8]);
  }
 
+
+ title: string[] = [];
+
+
+ myTitle() {
+    return this.title.push(this.round2[0]);
+  }
+
+  myTitle1() {
+    return this.title.push(this.round2[1]);
+  }
+
+  myTitle2() {
+    return this.title.push(this.round2[2]);
+  }
+
+  myTitle3() {
+    return this.title.push(this.round2[3]);
+  }
+
+
+
+
   id: string;
   name: string;
   age: string;
