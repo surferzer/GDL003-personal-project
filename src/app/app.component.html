@@ -82,54 +82,55 @@
     <ul class="round round-2">
         <li class="spacer">&nbsp;</li>
         
-        <li class="game game-top winner">{{selectedFighters[0]}}<span><button>W</button></span></li>
+        <li class="game game-top winner">{{selectedFighters[0]}}<span><button (click)= winner()>W</button></span></li>
         <li class="game game-spacer">&nbsp;</li>
-        <li class="game game-bottom ">{{selectedFighters[1]}}<span><button>W</button></span></li>
+        <li class="game game-bottom ">{{selectedFighters[1]}}<span><button (click)= winner1()>W</button></span></li>
 
         <li class="spacer">&nbsp;</li>
         
-        <li class="game game-top winner">{{selectedFighters[2]}} <span><button>W</button></span></li>
+        <li class="game game-top winner">{{selectedFighters[2]}} <span><button (click)= winner2()>W</button></span></li>
         <li class="game game-spacer">&nbsp;</li>
-        <li class="game game-bottom ">{{selectedFighters[3]}} <span><button>W</button></span></li>
+        <li class="game game-bottom ">{{selectedFighters[3]}} <span><button (click)= winner3()>W</button></span></li>
 
         <li class="spacer">&nbsp;</li>
         
-        <li class="game game-top ">{{selectedFighters[4]}} <span><button>W</button></span></li>
+        <li class="game game-top ">{{selectedFighters[4]}} <span><button (click)= winner4()>W</button></span></li>
         <li class="game game-spacer">&nbsp;</li>
-        <li class="game game-bottom winner">{{selectedFighters[5]}} <span><button>W</button></span></li>
+        <li class="game game-bottom winner">{{selectedFighters[5]}} <span><button (click)= winner5()>W</button></span></li>
 
         <li class="spacer">&nbsp;</li>
         
-        <li class="game game-top ">{{selectedFighters[6]}} <span><button>W</button></span></li>
+        <li class="game game-top ">{{selectedFighters[6]}} <span><button (click)= winner6()>W</button></span></li>
         <li class="game game-spacer">&nbsp;</li>
-        <li class="game game-bottom winner">{{selectedFighters[7]}} <span><button>W</button></span></li>
+        <li class="game game-bottom winner">{{selectedFighters[7]}} <span><button (click)= winner7()>W</button></span></li>
 
         <li class="spacer">&nbsp;</li>
     </ul>
     <ul class="round round-3">
         <li class="spacer">&nbsp;</li>
         
-        <li class="game game-top winner">Lousville <span><button>W</button></span></li>
+        <li class="game game-top winner">{{round2[0]}} <span><button>W</button></span></li>
         <li class="game game-spacer">&nbsp;</li>
-        <li class="game game-bottom ">Oregon <span><button>W</button></span></li>
+        <li class="game game-bottom ">{{round2[1]}} <span><button>W</button></span></li>
 
         <li class="spacer">&nbsp;</li>
         
-        <li class="game game-top ">Mich St <span><button>W</button></span></li>
+        <li class="game game-top ">{{round2[2]}}<span><button>W</button></span></li>
         <li class="game game-spacer">&nbsp;</li>
-        <li class="game game-bottom winner">Duke <span><button>W</button></span></li>
+        <li class="game game-bottom winner">{{round2[3]}} <span><button>W</button></span></li>
 
         <li class="spacer">&nbsp;</li>
     </ul>
     <ul class="round round-4">
         <li class="spacer">&nbsp;</li>
         
-        <li class="game game-top winner">Lousville <span><button>W</button></span></li>
+        <li class="game game-top winner">{{round2[4]}} <span><button>W</button></span></li>
         <li class="game game-spacer">&nbsp;</li>
-        <li class="game game-bottom ">Duke <span><button>W</button></span></li>
+        <li class="game game-bottom ">{{round2[5]}} <span><button>W</button></span></li>
         
         
-        <li class="spacer">&nbsp;</li> 
+        
+       <li class="spacer">&nbsp;          </li> 
     </ul>       
     <ul class="round round-4">
       <li class="spacer">&nbsp;</li>

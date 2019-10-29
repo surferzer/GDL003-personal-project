@@ -18,7 +18,6 @@ export class AppComponent {
 
   fighters = figthersList
   newR: string[] = [];
-  versus: string[]=[];
   selectedFighters: string[] = [];
 
 
@@ -46,7 +45,43 @@ export class AppComponent {
     
   }
 
+  round2:string[]=[];
 
+winner(){
+  this.round2.push(this.selectedFighters[0]);
+ }
+
+ winner1(){
+   this.round2.push(this.selectedFighters[1]);
+ }
+
+ winner2(){
+   this.round2.push(this.selectedFighters[2]);
+ }
+
+ winner3(){
+   this.round2.push(this.selectedFighters[3]);
+ }
+
+ winner4(){
+   this.round2.push(this.selectedFighters[4]);
+ }
+ 
+ winner5(){
+   this.round2.push(this.selectedFighters[5]);
+ }
+
+ winner6(){
+   this.round2.push(this.selectedFighters[6]);
+ }
+ 
+ winner7(){
+   this.round2.push(this.selectedFighters[7]);
+ }
+
+ winner8(){
+   this.round2.push(this.selectedFighters[8]);
+ }
 
   id: string;
   name: string;
