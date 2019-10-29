@@ -2,6 +2,9 @@ import { Component, Input } from '@angular/core';
 import { Url } from 'url';
 import { HtmlAstPath } from '@angular/compiler';
 import figthersList from '../assets/figthersList.json';
+import { BienvenidaComponent } from './bienvenida/bienvenida.component';
+
+
 
 @Component({
   selector: 'app-root',
@@ -14,20 +17,30 @@ import figthersList from '../assets/figthersList.json';
 export class AppComponent {
 
   fighters = figthersList
+  newR: string[] = [];
+  versus: string[]=[];
+  selectedFighters: string[] = [];
 
- // newR: string[] = [];
+
   randomThis() {
     let aleatorio = [];
+   // let versusAleatorio=[];
+
 
     for (let i = 0; i < this.fighters.length; i++) {
       aleatorio.push(Math.floor(Math.random() * (this.fighters.length - 1)));
+     // versusAleatorio.push(Math.floor(Math.random() * (this.fighters.length - 1)));
 
       let removed = this.fighters.splice(aleatorio[0], 1)
-      console.log(removed)
+      this.selectedFighters.push(removed[0].name);
+      console.log(this.selectedFighters)
       let resultado = removed[0].name
-      //this.newR.push(resultado)
+
+      console.log(resultado)
+      this.newR.push(resultado)
+    
       //return console.log(this.newR);  
-      return console.log(resultado);
+      return resultado;
         
     }
     

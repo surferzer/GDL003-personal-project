@@ -23,13 +23,10 @@
 <br>
 <div>
     <button (click)= randomThis()>Generar bracket</button>
-    <li>{{resultado}}
-
-    </li>
-    
+    <li>{{newR[newR.length-1]}}</li>
 </div>
 
-<h1> {{eventName[eventName.length-1]}}</h1>
+<h1> aqui vaaaa  </h1>
 <main id="tournament">
  <!--   <ul class="round round-1">
         <li class="spacer">&nbsp;</li>
@@ -85,27 +82,27 @@
     <ul class="round round-2">
         <li class="spacer">&nbsp;</li>
         
-        <li class="game game-top winner">Lousville <span><button>W</button></span></li>
+        <li class="game game-top winner">{{selectedFighters[0]}}<span><button>W</button></span></li>
         <li class="game game-spacer">&nbsp;</li>
-        <li class="game game-bottom ">Colo St <span><button>W</button></span></li>
+        <li class="game game-bottom ">{{selectedFighters[1]}}<span><button>W</button></span></li>
 
         <li class="spacer">&nbsp;</li>
         
-        <li class="game game-top winner">Oregon <span><button>W</button></span></li>
+        <li class="game game-top winner">{{selectedFighters[2]}} <span><button>W</button></span></li>
         <li class="game game-spacer">&nbsp;</li>
-        <li class="game game-bottom ">Saint Louis <span><button>W</button></span></li>
+        <li class="game game-bottom ">{{selectedFighters[3]}} <span><button>W</button></span></li>
 
         <li class="spacer">&nbsp;</li>
         
-        <li class="game game-top ">Memphis <span><button>W</button></span></li>
+        <li class="game game-top ">{{selectedFighters[4]}} <span><button>W</button></span></li>
         <li class="game game-spacer">&nbsp;</li>
-        <li class="game game-bottom winner">Mich St <span><button>W</button></span></li>
+        <li class="game game-bottom winner">{{selectedFighters[5]}} <span><button>W</button></span></li>
 
         <li class="spacer">&nbsp;</li>
         
-        <li class="game game-top ">Creighton <span><button>W</button></span></li>
+        <li class="game game-top ">{{selectedFighters[6]}} <span><button>W</button></span></li>
         <li class="game game-spacer">&nbsp;</li>
-        <li class="game game-bottom winner">Duke <span><button>W</button></span></li>
+        <li class="game game-bottom winner">{{selectedFighters[7]}} <span><button>W</button></span></li>
 
         <li class="spacer">&nbsp;</li>
     </ul>
