@@ -124,9 +124,9 @@
     <ul class="round round-4">
         <li class="spacer">&nbsp;</li>
         
-        <li class="game game-top winner">{{title[0]}} <span><button>W</button></span></li>
+        <li class="game game-top winner">{{title[0]}} <span><button (click)= aChamp()>W</button></span></li>
         <li class="game game-spacer">&nbsp;</li>
-        <li class="game game-bottom ">{{title[1]}} <span><button>W</button></span></li>
+        <li class="game game-bottom ">{{title[1]}} <span><button (click)= aChamp1()>W</button></span></li>
         
         
         
@@ -137,7 +137,7 @@
       
       
       
-      <li class="game game-bottom "> <span><button>C</button></span></li>
+      <li class="game game-bottom ">{{almostChampion[0]}} {{almostChampion[0].name}} {{almostChampion[0].photo}} <span><button>C</button></span></li>
       
       
       <li class="spacer">&nbsp;</li> 

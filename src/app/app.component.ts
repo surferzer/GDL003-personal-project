@@ -103,7 +103,15 @@ winner(){
     return this.title.push(this.round2[3]);
   }
 
+  almostChampion: string[]=[];
 
+  aChamp(){
+    return this.almostChampion.push(this.title[0]);
+  }
+
+  aChamp1(){
+    return this.almostChampion.push(this.title[1]);
+  }
 
 
   id: string;
