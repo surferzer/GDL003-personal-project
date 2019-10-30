@@ -1,12 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output } from '@angular/core';
+import { EventEmitter } from 'protractor';
 
 @Component({
   selector: 'app-bienvenida',
   templateUrl: './bienvenida.component.html',
-  styleUrls: ['./bienvenida.component.css']
+   styleUrls: ['./bienvenida.component.css']
 })
 export class BienvenidaComponent implements OnInit {
 
+  
   eventName : string[]=[];  
 
   addEvent(newT){

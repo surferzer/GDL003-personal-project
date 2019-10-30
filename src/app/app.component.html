@@ -26,59 +26,9 @@
     <li>{{newR[newR.length-1]}}</li>
 </div>
 
-<h1> aqui vaaaa</h1>
+<h1>  </h1>
 <main id="tournament">
- <!--   <ul class="round round-1">
-        <li class="spacer">&nbsp;</li>
-        
-        <li class="game game-top winner">{{resultado[0]}} <span>79</span></li>
-        <li class="game game-spacer">&nbsp;</li>
-        <li class="game game-bottom ">{{resultado[1]}} <span>48</span></li>
-
-        <li class="spacer">&nbsp;</li>
-        
-        <li class="game game-top winner">{{resultado[2]}} <span>84</span></li>
-        <li class="game game-spacer">&nbsp;</li>
-        <li class="game game-bottom ">{{resultado[3]}} <span>72</span></li>
-
-        <li class="spacer">&nbsp;</li>
-        
-        <li class="game game-top ">{{resultado[4]}}<span>55</span></li>
-        <li class="game game-spacer">&nbsp;</li>
-        <li class="game game-bottom winner">{{resultado[5]}} <span>68</span></li>
-
-        <li class="spacer">&nbsp;</li>
-        
-        <li class="game game-top winner">{{resultado[6]}} <span>64</span></li>
-        <li class="game game-spacer">&nbsp;</li>
-        <li class="game game-bottom ">{{resultado[7]}}<span>44</span></li>
-
-        <li class="spacer">&nbsp;</li>
-        
-        <li class="game game-top winner">{{resultado[8]}} <span>54</span></li>
-        <li class="game game-spacer">&nbsp;</li>
-        <li class="game game-bottom ">{{resultado[9]}} <span>52</span></li>
-
-        <li class="spacer">&nbsp;</li>
-        
-        <li class="game game-top winner">Mich St <span>65</span></li>
-        <li class="game game-spacer">&nbsp;</li>
-        <li class="game game-bottom ">Valparaiso <span>54</span></li>
-
-        <li class="spacer">&nbsp;</li>
-        
-        <li class="game game-top winner">Creighton <span>67</span></li>
-        <li class="game game-spacer">&nbsp;</li>
-        <li class="game game-bottom ">Cincinnati <span>63</span></li>
-
-        <li class="spacer">&nbsp;</li>
-        
-        <li class="game game-top winner">Duke <span>73</span></li>
-        <li class="game game-spacer">&nbsp;</li>
-        <li class="game game-bottom ">Albany <span>61</span></li>
-
-        <li class="spacer">&nbsp;</li>
-    </ul>-->
+ 
     <ul class="round round-2">
         <li class="spacer">&nbsp;</li>
         
@@ -145,34 +95,26 @@
 
 </main>
 
-
-
-
-
-
-
-
-
-
-
-
 <hr>
 <br>
 <br>
-    <div>
-    <ul>
-        <p>{{id}}</p>
-        <p>Name: {{name}}</p>
-        <p>Age: {{age}}</p>
-        <p>Weight: {{weight}}</p>
-        <p>Years of trainning: {{yearsOfTrainning}}</p>
-        <p>Category: {{category}}</p>
-        <p>NOTES: {{notes}}</p>
-       <p><img src= {{photo}} width="100px"></p>
-    </ul>
-      </div>
+   
         
-
+      <div>
+       
+          <ul>   
+            <li  *ngFor = "let fighter of fighters">                     
+              <p>Id: {{fighter.id}}</p>
+              <p>Name: {{fighter.name}}</p>
+              <p>Age: {{fighter.age}}</p>
+              <p>Weight: {{fighter.weight}}</p>
+              <p>Years of trainning: {{fighter.yearsOfTrainning}}</p>
+              <p>Category: {{fighter.category}}</p>
+              <p>NOTES: {{fighter.notes}}</p>
+             <p><img src= {{fighter.photo}} width="100px"></p>
+            </li>
+          </ul>
+            </div>
 
 
 

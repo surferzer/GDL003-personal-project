@@ -10,7 +10,7 @@ import { BienvenidaComponent } from './bienvenida/bienvenida.component';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+   styleUrls: ['./app.component.css']
 })
 
 
@@ -20,6 +20,8 @@ export class AppComponent {
   fighters = figthersList
   newR: string[] = [];
   selectedFighters: string[] = [];
+
+ 
 
 
   randomThis() {
@@ -32,6 +34,7 @@ export class AppComponent {
       // versusAleatorio.push(Math.floor(Math.random() * (this.fighters.length - 1)));
 
       let removed = this.fighters.splice(aleatorio[0], 1)
+    
       this.selectedFighters.push(removed[0].name);
       console.log(this.selectedFighters)
       let resultado = removed[0].name
@@ -135,16 +138,6 @@ export class AppComponent {
 
 
   constructor() {
-
-    this.id = this.fighters[0].id
-    this.name = this.fighters[0].name
-    this.age = this.fighters[0].age
-    this.weight = this.fighters[0].weight
-
-    this.category = this.fighters[0].category
-    this.notes = this.fighters[0].notes
-    this.photo = this.fighters[0].photo
-
 
   }
 }
