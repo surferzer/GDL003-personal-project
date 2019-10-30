@@ -116,7 +116,10 @@ export class AppComponent {
 
 
   getPhoto() {
+    let approved = this.fighters.filter(f => f.name = this.almostChampion[0])
 
+  return console.log(approved[0])
+  
   }
 
   id: string;
