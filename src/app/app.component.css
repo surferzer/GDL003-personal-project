@@ -115,7 +115,7 @@ h3{
 }
 
 .pushIt{
-  background: greenyellow;
+  background: rgb(247, 173, 12);
 }
 
 .pushIts{
@@ -123,7 +123,7 @@ h3{
 }
 
 .cardsF{
-color:gray;
+color:#c5c0c0;
 font-family: 'Julius Sans One', sans-serif;
 font-size: 20px;
 
@@ -135,7 +135,7 @@ main{
     flex-direction:row;
     color:wheat;
     font-family:  'Julius Sans One', sans-serif;
-    font-size: 20px;
+    font-size: 15px;
   }
   .round{
     display:flex;
