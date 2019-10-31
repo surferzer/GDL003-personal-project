@@ -132,6 +132,7 @@
     <br>
     <ul class="cardsF">
       <li *ngFor="let fighter of fighters">
+          <p><img src={{fighter.photo}} width="100px"></p>
         <p>Id: {{fighter.id}}</p>
         <p>Name: {{fighter.name}}</p>
         <p>Age: {{fighter.age}}</p>
@@ -139,7 +140,7 @@
         <p>Years of trainning: {{fighter.yearsOfTrainning}}</p>
         <p>Category: {{fighter.category}}</p>
         <p>NOTES: {{fighter.notes}}</p>
-        <p><img src={{fighter.photo}} width="100px"></p>
+        
       </li>
     </ul>
     <br>
