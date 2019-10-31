@@ -96,14 +96,46 @@ font-family: 'Julius Sans One', sans-serif;
 }
 
 
+h2{
+  font-family:  'Julius Sans One', sans-serif;
+  font-size: 20px;
+    text-align: left;
+  COLOR: #1278BF; 
+  text-shadow: 0px 0px 9px #508AD3;
+  position: relative;
+  left:15%
+}
 
+h3{
+  color: grey;
+  font-family:'Julius Sans One', sans-serif;
+  text-align: center;
+  font-size: 40px;
+  text-shadow: 0px 0px 9px #508AD3;
+}
 
+.pushIt{
+  background: greenyellow;
+}
+
+.pushIts{
+  background: red;
+}
+
+.cardsF{
+color:gray;
+font-family: 'Julius Sans One', sans-serif;
+font-size: 20px;
+
+}
 
 
 main{
     display:flex;
     flex-direction:row;
-    color:white;
+    color:wheat;
+    font-family:  'Julius Sans One', sans-serif;
+    font-size: 20px;
   }
   .round{
     display:flex;

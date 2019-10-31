@@ -41,57 +41,57 @@
   </div>
 
 
-  <h1> </h1>
+  <h2> Bracket Male -61kg</h2>
   <main id="tournament">
-
+      
     <ul class="round round-2">
       <li class="spacer">&nbsp;</li>
 
-      <li class="game game-top winner">{{selectedFighters[0]}}<span><button (click)=winner()>W</button></span></li>
+      <li class="game game-top winner">{{selectedFighters[0]}}<span><button class="pushIt" (click)=winner()>W</button></span></li>
       <li class="game game-spacer">&nbsp;</li>
-      <li class="game game-bottom ">{{selectedFighters[1]}}<span><button (click)=winner1()>W</button></span></li>
+      <li class="game game-bottom ">{{selectedFighters[1]}}<span><button class="pushIt" (click)=winner1()>W</button></span></li>
 
       <li class="spacer">&nbsp;</li>
 
-      <li class="game game-top winner">{{selectedFighters[2]}} <span><button (click)=winner2()>W</button></span></li>
+      <li class="game game-top winner">{{selectedFighters[2]}} <span><button class="pushIt" (click)=winner2()>W</button></span></li>
       <li class="game game-spacer">&nbsp;</li>
-      <li class="game game-bottom ">{{selectedFighters[3]}} <span><button (click)=winner3()>W</button></span></li>
+      <li class="game game-bottom ">{{selectedFighters[3]}} <span><button class="pushIt" (click)=winner3()>W</button></span></li>
 
       <li class="spacer">&nbsp;</li>
 
-      <li class="game game-top ">{{selectedFighters[4]}} <span><button (click)=winner4()>W</button></span></li>
+      <li class="game game-top ">{{selectedFighters[4]}} <span><button class="pushIt" (click)=winner4()>W</button></span></li>
       <li class="game game-spacer">&nbsp;</li>
-      <li class="game game-bottom winner">{{selectedFighters[5]}} <span><button (click)=winner5()>W</button></span></li>
+      <li class="game game-bottom winner">{{selectedFighters[5]}} <span><button class="pushIt" (click)=winner5()>W</button></span></li>
 
       <li class="spacer">&nbsp;</li>
 
-      <li class="game game-top ">{{selectedFighters[6]}} <span><button (click)=winner6()>W</button></span></li>
+      <li class="game game-top ">{{selectedFighters[6]}} <span><button class="pushIt" (click)=winner6()>W</button></span></li>
       <li class="game game-spacer">&nbsp;</li>
-      <li class="game game-bottom winner">{{selectedFighters[7]}} <span><button (click)=winner7()>W</button></span></li>
+      <li class="game game-bottom winner">{{selectedFighters[7]}} <span><button class="pushIt" (click)=winner7()>W</button></span></li>
 
       <li class="spacer">&nbsp;</li>
     </ul>
     <ul class="round round-3">
       <li class="spacer">&nbsp;</li>
 
-      <li class="game game-top winner">{{round2[0]}} <span><button (click)=myTitle()>W</button></span></li>
+      <li class="game game-top winner">{{round2[0]}} <span><button class="pushIt" (click)=myTitle()>W</button></span></li>
       <li class="game game-spacer">&nbsp;</li>
-      <li class="game game-bottom ">{{round2[1]}} <span><button (click)=myTitle1()>W</button></span></li>
+      <li class="game game-bottom ">{{round2[1]}} <span><button class="pushIt" (click)=myTitle1()>W</button></span></li>
 
       <li class="spacer">&nbsp;</li>
 
-      <li class="game game-top ">{{round2[2]}}<span><button (click)=myTitle2()>W</button></span></li>
+      <li class="game game-top ">{{round2[2]}}<span><button class="pushIt" (click)=myTitle2()>W</button></span></li>
       <li class="game game-spacer">&nbsp;</li>
-      <li class="game game-bottom winner">{{round2[3]}} <span><button (click)=myTitle3()>W</button></span></li>
+      <li class="game game-bottom winner">{{round2[3]}} <span><button class="pushIt" (click)=myTitle3()>W</button></span></li>
 
       <li class="spacer">&nbsp;</li>
     </ul>
     <ul class="round round-4">
       <li class="spacer">&nbsp;</li>
 
-      <li class="game game-top winner">{{title[0]}} <span><button (click)=aChamp()>W</button></span></li>
+      <li class="game game-top winner">{{title[0]}} <span><button class="pushIt" (click)=aChamp()>W</button></span></li>
       <li class="game game-spacer">&nbsp;</li>
-      <li class="game game-bottom ">{{title[1]}} <span><button (click)=aChamp1()>W</button></span></li>
+      <li class="game game-bottom ">{{title[1]}} <span><button class="pushIt" (click)=aChamp1()>W</button></span></li>
 
 
 
@@ -102,7 +102,8 @@
 
 
 
-      <li class="game game-bottom "> Champion Male -61kg{{almostChampion[0]}} <span><button
+      <li class="game game-bottom "> Champion Male -61kg
+        <br><br><b>{{almostChampion[0]}}</b> <img src="https://cdn2.iconfinder.com/data/icons/entrepreneurship/50/8-512.png" width="50"><span><button class="pushIts"
             (click)=getPhoto() >C</button></span></li>
 
 
@@ -117,15 +118,16 @@
   <br><br>
   <br><br>
   <br><br>
+  <br><br>
+  
  
-  <hr>
-  <br>
-  <br>
 
 
   <div>
-    <h1>FIGTHERS INFORMATION "Male -61kgs"</h1>
-    <ul>
+    <h3>FIGTHERS INFORMATION "Male -61kgs"</h3>
+    <br>
+    <br>
+    <ul class="cardsF">
       <li *ngFor="let fighter of fighters">
         <p>Id: {{fighter.id}}</p>
         <p>Name: {{fighter.name}}</p>
@@ -137,6 +139,8 @@
         <p><img src={{fighter.photo}} width="100px"></p>
       </li>
     </ul>
+    <br>
+    <br>
   </div>
 
 
