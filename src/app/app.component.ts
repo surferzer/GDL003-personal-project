@@ -129,7 +129,7 @@ export class AppComponent {
   name: string;
   age: string;
   weight: string;
-
+yearsOfTrainning: string;
   category: string;
   notes: string;
   photo: string;

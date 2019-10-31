@@ -1,18 +1,90 @@
-.pp{
+    .pp{
     position: absolute;
     top:-10px;
     left:-10px;
     right: -10px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family:  'Julius Sans One', sans-serif;
     text-align: center;
-    color:black;
-    line-height: 20px;
+    color:wheat;
+    line-height: 30px;
+    }
+
+    .nameOfThis{
+        color:wheat;
+        font-size: 50px;
+        position: relative;
+        left: 500px;
+        top: 150px;
+        
     }
 
     .nameOfT{
-        position: relative;
-        top:-500px;
-        right: -300px;
+        background-color:black;
+        position: absolute;
+        top:400px;
+        right: 600px;
         text-align: center;
-        font-size: 40px;
+        font-size: 50px;
+        font-family:  'Julius Sans One', sans-serif;
     }
+
+    .parraf{
+        color: rgb(247, 173, 12);
+    }
+
+    .inputes{
+background-color: wheat;
+border-radius: 15px;
+
+
+    }
+
+    .button {
+        display: inline-block;
+        text-align: center;
+        vertical-align: middle;
+        padding: 12px 24px;
+        border: 1px solid #726f68;
+        border-radius: 8px;
+        background: #bab5a9;
+        background: -webkit-gradient(linear, left top, left bottom, from(#bab5a9), to(#726f68));
+        background: -moz-linear-gradient(top, #bab5a9, #726f68);
+        background: linear-gradient(to bottom, #bab5a9, #726f68);
+        -webkit-box-shadow: #fad482 -1px 10px 40px 10px;
+        -moz-box-shadow: #fad482 -1px 10px 40px 10px;
+        box-shadow: #fad482 -1px 10px 40px 10px;
+        text-shadow: #1c170b 1px -1px 1px;
+        font: normal normal bold 20px trebuchet ms;
+        color: #f5ca75;
+        text-decoration: none;
+    }
+    .button:hover,
+    .button:focus {
+        border: 1px solid #8f8b82;
+        background: #dfd9cb;
+        background: -webkit-gradient(linear, left top, left bottom, from(#dfd9cb), to(#89857d));
+        background: -moz-linear-gradient(top, #dfd9cb, #89857d);
+        background: linear-gradient(to bottom, #dfd9cb, #89857d);
+        color: #f5ca75;
+        text-decoration: none;
+    }
+    .button:active {
+        background: #726f68;
+        background: -webkit-gradient(linear, left top, left bottom, from(#726f68), to(#726f68));
+        background: -moz-linear-gradient(top, #726f68, #726f68);
+        background: linear-gradient(to bottom, #726f68, #726f68);
+    }
+    .button:after{
+        content:  "\0000a0";
+        display: inline-block;
+        height: 24px;
+        width: 24px;
+        line-height: 24px;
+        margin: 0 -4px -6px 4px;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAByklEQVRIiZXVv2pVQRAG8F8OQURSWKQQkRRiYaGtYKGVhYU2ViIpRJ/BJ8hTiEUaLe0ECxUUrLRSQY2FhRJTCCqSSEyuJxZn12w2u3uPHyx39syfb2Z2di90xqH7TxnMog+KvmCQ6saimHAziyk2YztQxSx2GusPrtecZwrfYkuWcBJPcBPLmBTsT+Mbjof9Ej6UgubybyzixpQKdnAP5/Eq2McYXRTSQ+yT34+4W8g6xzM8x1YWS5eyZU5fcCw4tdAbWjcf9j8k05eOZ2SORK9xNsg/GwQTbOKEYSA+JfGaLXqECzgSnGrYwjou4xfeprFii9I2xfU0ZHQlVFPDZgh8FffttrQrVdAn6z0e4xbeqd/mdZwL+gdp9o2k/mEBb/AS35VHdBUruKYyMLUWdYYWXcRXw40tEWzgNg4W/Lt9bBmibhFrFYI7dke0dKajcQoPsR2q+RyIDzQS28OaZ1DKZj5kvIIzmb7o35qiPtMxPGqTRG5NSh8Zpxol8iHDqzmHoxWbfZe21CLJPmLBcLvj4a4Z/geaLZpJFPlblFdyGJdCFREvDLc89S3Jo1CrtDmW+YdWiyg/irm8hzBn7ktGeVZTEA+6Q/8XkG2UyAg+kNEAAAAASUVORK5CYII=") no-repeat left center transparent;
+        background-size: 100% 100%;
+    }
+    

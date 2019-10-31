@@ -1,120 +1,143 @@
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Black+Ops+One|Expletus+Sans|Julius+Sans+One|Lilita+One|Monoton|Patrick+Hand|Patrick+Hand+SC|Rye|Yanone+Kaffeesatz&display=swap');
+    </style>
 
 
-
-  
 <div class="toolbar" role="banner">
-    <span class="welcome">Welcome to Competition System GYM58 </span><br>
-  <img
-    width="650"
-    height="650"
-    position="absolute"
-    alt="App Logo"
-    src="https://scontent-qro1-1.xx.fbcdn.net/v/t1.0-9/12042878_143819579297450_7711532302472148370_n.jpg?_nc_cat=103&_nc_oc=AQm4dEy4oevuXSUpYth2w5GS02WcXyfmtKv_cn8uGAEATNFa1XN7IRnGbO4EURrM36w&_nc_ht=scontent-qro1-1.xx&oh=f3321a403ebf6ed611f3e2ac328dbcab&oe=5E1935FC"
-  />
+  <span class="welcome">Welcome to Competition System GYM58 </span><br>
+  <img class="logo" width="650" height="650" position="absolute" alt="App Logo"
+    src="https://scontent-qro1-1.xx.fbcdn.net/v/t1.0-9/12042878_143819579297450_7711532302472148370_n.jpg?_nc_cat=103&_nc_oc=AQm4dEy4oevuXSUpYth2w5GS02WcXyfmtKv_cn8uGAEATNFa1XN7IRnGbO4EURrM36w&_nc_ht=scontent-qro1-1.xx&oh=f3321a403ebf6ed611f3e2ac328dbcab&oe=5E1935FC" />
 
-    <app-bienvenida></app-bienvenida>
 
-    <h1>LIST OF FIGHTERS</h1>
-    <ul>
-    <app-fighters-by-category *ngFor= "let fighter of this.fighters" [nameFighter]="fighter"></app-fighters-by-category>
-    </ul>
+  <app-bienvenida></app-bienvenida>
 
-<br>
-<br>
-<div>
-    <button (click)= randomThis()>Generar bracket</button>
-    <li>{{newR[newR.length-1]}}</li>
-</div>
 
-<h1>  </h1>
-<main id="tournament">
- 
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  
+  
+
+  <div class="listof">
+    <div class="a">
+      <h1>LIST OF FIGHTERS </h1>
+    </div>
+    <br>
+
+    <div class="fgts">
+      <ul>
+        <app-fighters-by-category *ngFor="let fighter of this.fighters" [nameFighter]="fighter">
+        </app-fighters-by-category>
+      </ul>
+    </div>
+    <br>
+    <br>
+    <div>
+      <button class="generateButton" (click)=randomThis()>Generar bracket</button>
+      {{newR[newR.length-1]}}
+    </div>
+  </div>
+
+
+  <h1> </h1>
+  <main id="tournament">
+
     <ul class="round round-2">
-        <li class="spacer">&nbsp;</li>
-        
-        <li class="game game-top winner">{{selectedFighters[0]}}<span><button (click)= winner()>W</button></span></li>
-        <li class="game game-spacer">&nbsp;</li>
-        <li class="game game-bottom ">{{selectedFighters[1]}}<span><button (click)= winner1()>W</button></span></li>
+      <li class="spacer">&nbsp;</li>
 
-        <li class="spacer">&nbsp;</li>
-        
-        <li class="game game-top winner">{{selectedFighters[2]}} <span><button (click)= winner2()>W</button></span></li>
-        <li class="game game-spacer">&nbsp;</li>
-        <li class="game game-bottom ">{{selectedFighters[3]}} <span><button (click)= winner3()>W</button></span></li>
+      <li class="game game-top winner">{{selectedFighters[0]}}<span><button (click)=winner()>W</button></span></li>
+      <li class="game game-spacer">&nbsp;</li>
+      <li class="game game-bottom ">{{selectedFighters[1]}}<span><button (click)=winner1()>W</button></span></li>
 
-        <li class="spacer">&nbsp;</li>
-        
-        <li class="game game-top ">{{selectedFighters[4]}} <span><button (click)= winner4()>W</button></span></li>
-        <li class="game game-spacer">&nbsp;</li>
-        <li class="game game-bottom winner">{{selectedFighters[5]}} <span><button (click)= winner5()>W</button></span></li>
+      <li class="spacer">&nbsp;</li>
 
-        <li class="spacer">&nbsp;</li>
-        
-        <li class="game game-top ">{{selectedFighters[6]}} <span><button (click)= winner6()>W</button></span></li>
-        <li class="game game-spacer">&nbsp;</li>
-        <li class="game game-bottom winner">{{selectedFighters[7]}} <span><button (click)= winner7()>W</button></span></li>
+      <li class="game game-top winner">{{selectedFighters[2]}} <span><button (click)=winner2()>W</button></span></li>
+      <li class="game game-spacer">&nbsp;</li>
+      <li class="game game-bottom ">{{selectedFighters[3]}} <span><button (click)=winner3()>W</button></span></li>
 
-        <li class="spacer">&nbsp;</li>
+      <li class="spacer">&nbsp;</li>
+
+      <li class="game game-top ">{{selectedFighters[4]}} <span><button (click)=winner4()>W</button></span></li>
+      <li class="game game-spacer">&nbsp;</li>
+      <li class="game game-bottom winner">{{selectedFighters[5]}} <span><button (click)=winner5()>W</button></span></li>
+
+      <li class="spacer">&nbsp;</li>
+
+      <li class="game game-top ">{{selectedFighters[6]}} <span><button (click)=winner6()>W</button></span></li>
+      <li class="game game-spacer">&nbsp;</li>
+      <li class="game game-bottom winner">{{selectedFighters[7]}} <span><button (click)=winner7()>W</button></span></li>
+
+      <li class="spacer">&nbsp;</li>
     </ul>
     <ul class="round round-3">
-        <li class="spacer">&nbsp;</li>
-        
-        <li class="game game-top winner">{{round2[0]}} <span><button (click)= myTitle()>W</button></span></li>
-        <li class="game game-spacer">&nbsp;</li>
-        <li class="game game-bottom ">{{round2[1]}} <span><button (click)= myTitle1()>W</button></span></li>
+      <li class="spacer">&nbsp;</li>
 
-        <li class="spacer">&nbsp;</li>
-        
-        <li class="game game-top ">{{round2[2]}}<span><button (click)= myTitle2()>W</button></span></li>
-        <li class="game game-spacer">&nbsp;</li>
-        <li class="game game-bottom winner">{{round2[3]}} <span><button (click)= myTitle3()>W</button></span></li>
+      <li class="game game-top winner">{{round2[0]}} <span><button (click)=myTitle()>W</button></span></li>
+      <li class="game game-spacer">&nbsp;</li>
+      <li class="game game-bottom ">{{round2[1]}} <span><button (click)=myTitle1()>W</button></span></li>
 
-        <li class="spacer">&nbsp;</li>
+      <li class="spacer">&nbsp;</li>
+
+      <li class="game game-top ">{{round2[2]}}<span><button (click)=myTitle2()>W</button></span></li>
+      <li class="game game-spacer">&nbsp;</li>
+      <li class="game game-bottom winner">{{round2[3]}} <span><button (click)=myTitle3()>W</button></span></li>
+
+      <li class="spacer">&nbsp;</li>
     </ul>
     <ul class="round round-4">
-        <li class="spacer">&nbsp;</li>
-        
-        <li class="game game-top winner">{{title[0]}} <span><button (click)= aChamp()>W</button></span></li>
-        <li class="game game-spacer">&nbsp;</li>
-        <li class="game game-bottom ">{{title[1]}} <span><button (click)= aChamp1()>W</button></span></li>
-        
-        
-        
-       <li class="spacer">&nbsp;          </li> 
-    </ul>       
+      <li class="spacer">&nbsp;</li>
+
+      <li class="game game-top winner">{{title[0]}} <span><button (click)=aChamp()>W</button></span></li>
+      <li class="game game-spacer">&nbsp;</li>
+      <li class="game game-bottom ">{{title[1]}} <span><button (click)=aChamp1()>W</button></span></li>
+
+
+
+      <li class="spacer">&nbsp; </li>
+    </ul>
     <ul class="round round-4">
       <li class="spacer">&nbsp;</li>
-      
-      
-      
-      <li class="game game-bottom ">{{almostChampion[0]}} <span><button (click)= getPhoto()>C</button></span></li>
-      
-      
-      <li class="spacer">&nbsp;</li> 
-  </ul>       
 
-</main>
 
-<hr>
-<br>
-<br>
-   
-        
-      <div>
-       
-          <ul>   
-            <li  *ngFor = "let fighter of fighters">                     
-              <p>Id: {{fighter.id}}</p>
-              <p>Name: {{fighter.name}}</p>
-              <p>Age: {{fighter.age}}</p>
-              <p>Weight: {{fighter.weight}}</p>
-              <p>Years of trainning: {{fighter.yearsOfTrainning}}</p>
-              <p>Category: {{fighter.category}}</p>
-              <p>NOTES: {{fighter.notes}}</p>
-             <p><img src= {{fighter.photo}} width="100px"></p>
-            </li>
-          </ul>
-            </div>
+
+      <li class="game game-bottom ">CHAMPION Male -61kgs {{almostChampion[0]}} <span><button
+            (click)=getPhoto()>C</button></span></li>
+
+
+      <li class="spacer">&nbsp;</li>
+    </ul>
+
+    
+  </main>
+
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+ 
+  <hr>
+  <br>
+  <br>
+
+
+  <div>
+    <h1>FIGTHERS INFORMATION "Male -61kgs"</h1>
+    <ul>
+      <li *ngFor="let fighter of fighters">
+        <p>Id: {{fighter.id}}</p>
+        <p>Name: {{fighter.name}}</p>
+        <p>Age: {{fighter.age}}</p>
+        <p>Weight: {{fighter.weight}}</p>
+        <p>Years of trainning: {{fighter.yearsOfTrainning}}</p>
+        <p>Category: {{fighter.category}}</p>
+        <p>NOTES: {{fighter.notes}}</p>
+        <p><img src={{fighter.photo}} width="100px"></p>
+      </li>
+    </ul>
+  </div>
 
 
 
@@ -306,5 +329,5 @@
   </div>
 
 -->
-
+</div>
 <router-outlet></router-outlet>
