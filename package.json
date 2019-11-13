@@ -1,13 +1,16 @@
 {
   "name": "gym58",
   "version": "0.0.0",
+  "homepage": "https://surferzer.github.io/GDL003-personal-project/src",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "private": true,
   "dependencies": {
