@@ -1,7 +1,7 @@
 {
   "name": "gym58",
   "version": "0.0.0",
-  "homepage": "https://surferzer.github.io/GDL003-personal-project/src",
+  "homepage": "https://surferzer.github.io/GDL003-personal-project",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
